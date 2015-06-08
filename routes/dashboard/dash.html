@@ -1,33 +1,93 @@
 <br> <br> <br> 
-<h4> ADD NEW LISTINGS </h4>
+<div class="dash">
+	<div class="col-md-offset-1">
+		<h4> ADD NEW LISTINGS </h4>
 			<form class="register-form2">
-				<div class="row inline">
-						<input type="text field" placeholder="Enter Street Address"/>
-						<input type="text field" placeholder="Apt #"/>
-						<input type="text field" placeholder="Enter City"/>
-						<input type="text field" placeholder="Enter Zip Code"/>
-						<a><h5 href="#checkout" class="menu2-appointment2" align="center">EDIT</h5></a>
+				<div class="row">
+						<input type="text" placeholder="Enter Street Address"/>
+						<input type="text" placeholder="Apt #"/>
+						<input type="text" placeholder="Enter City"/>
+						<input type="text" placeholder="Enter Zip Code"/>
+						<a><h5 href="#checkout" class="menu menu2-appointment" align="center"><i class="fa fa-plus"></i> ADD TO BOOKMARKS</h5></a>
 				</div>
 			</form>
-<h4> MAKE AN APPOINTMENT </h4>
+		<h4> MAKE AN APPOINTMENT </h4>
 			<form class="register-form2">
-				<div class="right row inline">
-					<input type="text field" placeholder="Enter City"/>
-					<input type="text field" placeholder="Enter Zip Code"/>
-					<a><h5 href="#checkout" class="menu2-appointment2" align="center">MAKE AN APPOINTMENT</h5></a>
+				<div class="row">
+					<input type="text" placeholder="Enter City"/>
+					<input type="text" placeholder="Enter Zip Code"/>
+					<a><h5 href="#checkout" class="menu menu2-appointment" atdgn="center"> <i class="fa fa-check"></i> MAKE AN APPOINTMENT</h5></a>
 				</div>
 			</form>
-		<div class="col-md-2" align="center">
-			<ul class="list-unstyled">
-				<li> <p>Posting Date<i class="fa fa-long-arrow-up"> </i><i class="fa fa-long-arrow-down"> </i></p></li>
-				<li> <p>Rent<i class="fa fa-long-arrow-up"> </i><i class="fa fa-long-arrow-down"> </i></p></li>
-				<li> <p>Neighborhood<i class="fa fa-long-arrow-up"> </i><i class="fa fa-long-arrow-down"> </i></p></li>
-			</ul>
-			<a> View Map </a>
-		</div>
+	</div>
+		
+	<div class="col-md-offset-1 col-md-2" align="center">
+		<tbody>
+			<table class="sort">
+				<tr><td> <p>Posting Date<i class="fa fa-long-arrow-up"> </i><i class="fa fa-long-arrow-down"> </i></p></td></tr>
+				<tr><td> <p>Rent<i class="fa fa-long-arrow-up"> </i><i class="fa fa-long-arrow-down"> </i></p></td></tr>
+				<tr><td> <p>Neighborhood<i class="fa fa-long-arrow-up"> </i><i class="fa fa-long-arrow-down"> </i></p></td></tr>
+			</table>
+		</tbody>
 
-		<div class="col-md-10 well scrollable-content">
-			<section 
+		<a> View Map </a>
+
+		<tbody id="scroll">
+			<table class="list">
+				<a href><tr><td> 
+					<br>
+					<p>{{address.str}}</p>
+					<p>{{address.apt}}</p>
+					<p>{{address.city}}</p>
+					<br>
+				</td></tr></a>
+				<a href><tr><td> 
+					<br>
+					<p>{{address.str}}</p>
+					<p>{{address.apt}}</p>
+					<p>{{address.city}}</p>
+					<br>
+				</td></tr></a>
+				<a href><tr><td> 
+					<br>
+					<p>{{address.str}}</p>
+					<p>{{address.apt}}</p>
+					<p>{{address.city}}</p>
+					<br>
+				</td></tr></a>
+				<a href><tr><td> 
+					<br>
+					<p>{{address.str}}</p>
+					<p>{{address.apt}}</p>
+					<p>{{address.city}}</p>
+					<br>
+				</td></tr></a>
+			</table>
+		</tbody>
+
+	</div>
+
+	<div class="col-md-7 well scrollable-content prog">
+
+			<i id="circle">
+				<br><br><br><br> Preverified
+			</i>
+			<i id="circle">
+				<br><br><br><br> Applied
+			</i>
+			<i id="circle">
+				<br><br><br><br> Approved
+			</i>
+			<i id="circle">
+				<br><br><br><br> Completed
+			</i>
+
+			<hr class="fancy-line"></hr>
 
 
-		</div>
+		<section></section>
+
+
+
+	</div>
+</div>

@@ -22,7 +22,7 @@ body {
     background-color: green
 }
 
-.menu > li > a{
+.menu .nav-login li > a{
   display: block;
   width: 140px;
   height: 40px;
@@ -33,24 +33,35 @@ body {
   margin-top: .5em;
 }
 
-.menu4 {
+.menu .menu4 {
 	display: inline-block;
 	margin-top: .5em;
 	position: relative;
-	left: 27%;
+	left: 2%;
 }
-.menu4 > li > a{
+
+.menu .menu4 > li > a{
   display: block;
   width: 200px;
   height: 40px;
   text-decoration: none;
+  font-size: .9em;
   text-align: center;
   color: white;
   border: solid .1em white;
   background-color: black;
+  margin-top: .7em;
 }
 
-.menu2 {
+.menu .menu4 li:nth-child(2) > a{
+  margin-top: .5em !important;
+  color: black !important;
+  border: solid .1em black !important;
+  background-color: white !important;
+  padding-top: .8em;
+}
+
+.menu .menu2 {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: .3em;
@@ -64,19 +75,53 @@ body {
   border-radius: 0px;
 }
 
-.menu3 {
+.menu .menu3 {
   display: block;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: .4em;
-  padding-bottom: .3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-decoration: none;
   text-align: center;
+  width: 18em;
+  font-size: .8em;
   color: white;
   border: solid .1em black;
   background-color: black;
   border-radius: 0px;
 }
+
+.menu .menu2-appointment {
+  display: block;
+  width: 18em;
+  padding: .9em 0em .9em;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: solid .25em black;
+  background-color: white;
+  border-radius: 0px;
+  margin-top: .2em;
+  margin-left: .875em;
+}
+
+.menu .menu2-appointment2 {
+  display: inline-block;
+  width: 18em;
+  padding: .9em 0em .9em;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: solid .25em black;
+  background-color: white;
+  border-radius: 0px;
+  margin-top: .2em;
+}
+
+.checkout .menu .menu3 {
+  margin-left: 25%;
+}
+
 
 
 a:hover {
@@ -213,197 +258,33 @@ a:hover {
 }
 
 .register-form2 input {
-	margin-top: .5em;
+	margin-top: 1em;
 	border: 1px solid black;
-	width: 15em;
+	width: 18em;
 	height: 3em;
-	padding-left: .7em;
+  font-size: .8em;
+	padding-left: .8em;
+  margin-left: 1em;
 }
 
-/*form {
-    margin: 0.6em 0;
-}
-form.accnav {
-    font-size: 1.1em;
-    text-align: right;
-    text-transform: uppercase;
-}
-form.accnav a {
-    color: #999;
-    text-decoration: none;
-}
-article.accordion {
-    background-color: #666;
-    border-radius: 5px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-    display: block;
-    margin: 0 auto;
-    padding: 0.5em 0.5em 1px;
-    width: 30em;
-}
-article.accordion section {
-    background-color: #333;
-    border-radius: 3px;
-    color: #333;
-    display: block;
-    height: 2em;
-    margin: 0 0 0.5em;
-    overflow: hidden;
-    padding: 0 1em;
-    width: 28em;
-}
-article.accordion section p {
-    color: #ddd;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 2em;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-article.accordion section p a {
-    color: inherit;
-    display: block;
-    line-height: 2em;
-    outline: 0 none;
-    text-decoration: none;
-    width: 100%;
-}
-article.accordion section, article.accordion section p {
-    transition: all 1s ease 0s;
-}
-article.accordion section:target {
-    background-color: #fff;
-    height: 15em;
-}
-article.accordion section:target h2 {
-    color: #333;
-    font-size: 1.6em;
-}*/
-
-/*
-.accordion { 
-     width:830px;
-     overflow:hidden; 
-     margin:10px auto; 
-     padding:10px; 
-     margin-top: 4em;
+.r-form i:nth-child(2){
+  left:15% !important;
 }
 
-.accordion ul > li input[type=checkbox]{ 
-
-      float:left;
-      overflow:hidden; 
-      color:#333; 
-      cursor:pointer; 
-      margin:3px; 
+.r-form i:nth-child(3){
+  left:30% !important;
 }
 
-
-.accordion li:hover {
-      background:#444;
-}
-
-
-
-.accordion li:after{
-      position:relative;
-      font-size:24px;
-      color:#000;
-      font-weight:bold;
-}
-
-.accordion li:nth-child(1):after{ content:'1'; }
-.accordion li:nth-child(2):after{ content:'2'; }
-.accordion li:nth-child(3):after{ content:'3'; }
-.accordion li:nth-child(4):after{ content:'4'; }
-.accordion li:nth-child(5):after{ content:'5'; }
-.accordion li:nth-child(6):after{ content:'6'; }
-.accordion li:nth-child(7):after{ content:'7'; }
-
-
-.accordion ul > li > form { 
-      display:none !important; 
-}
-.accordion li:target { 
-      background:#FFF; 
-      padding:10px;
-}
-.accordion li:target:hover { 
-      background:#FFF; 
-}
-.accordion li:target ul > li > form  {
-      width:100%;
-}
-.accordion li:target ul > li > form { 
-      color:#333; 
-      padding:0;
-}
-
-.accordion li:target ul > li > form {
-      display:block;
-}
-
-.accordion li:target p {
-      display:block;
-}
-
-.accordion li p a{
-      padding:8px 10px;
-      display:block; 
-      font-size:16px; 
-      font-weight:normal;
-      color:#eee; 
-      text-decoration:none; 
-}
-
-.accordian li{ 
-     width:100%; 
-     height:40px; 
-     -webkit-transition:height 0.2s ease-out;
-     -moz-transition:height 0.2s ease-out;
-     -o-transition:height 0.2s ease-out;
-     transition:height 0.2s ease-out;
-}
- 
-
-.accordian :target{ 
-     height:250px; 
-     width:97%;
-}
-
-.accordian li ul > li > form  { 
-     position:relative; 
-     left:0; 
-     top:-15px; 
-}
-
-.accordian li:after{ 
-      top:-60px;
-      left:810px;
-}
-
-.accordian li:target:after{ 
-      left:-9999px;
-}*/
-
-.accordion p {
-  display: inline;
-  margin-left: 30%;
-}
-
-.accordion p:first-child {
-  margin-left: 15% !important;
+.r-form i:nth-child(4){
+  left:48% !important;
 }
 
 .success {
-	position: absolute;
-	top: 15%;
-	left: 20%;
+	margin-top: %;
 }
 
 .halved {
-	width: 7.37em !important;
+	width: 8.33em !important;
 }
 
 .well .register-form .btn {
@@ -412,7 +293,6 @@ article.accordion section:target h2 {
 	width: 15em;
 	height: 15em;
 	padding-left: 1em;
-
 }
 
 .hide {
@@ -420,10 +300,12 @@ article.accordion section:target h2 {
 }
  
 
+
 .btn {
 	width:15em;
 	height: 15em;
 	border: .1em solid black !important;
+  border-radius: 0px !important;
 }
 
 .btn-file {
@@ -440,6 +322,11 @@ article.accordion section:target h2 {
 	border: .1em solid black !important;
 	width:1em;
 	height:1em;
+  margin-right: .5em;
+}
+
+.fa-check-square-o {
+  margin-right: .5em
 }
 
 .btn-file p {
@@ -508,40 +395,8 @@ article.accordion section:target h2 {
 	margin-top: .7em;
 }
 
-.fa-check {
+.qu {
 	padding-right: 5px;
-}
-
-.menu2-appointment {
-  display: block;
-  width: 18em;
-  padding: .9em 0em .9em;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  border: solid .25em black;
-  background-color: white;
-  border-radius: 0px;
-  margin-top: .2em;
-  margin-left: .875em;
-}
-
-.menu2-appointment2 {
-  display: inline-block;
-  width: 18em;
-  padding: .9em 0em .9em;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  border: solid .25em black;
-  background-color: white;
-  border-radius: 0px;
-  margin-top: .2em;
-}
-
-.scrollable-content {
-  height: 180px;
-  overflow: auto;
 }
 
 .login1 {
@@ -552,15 +407,15 @@ article.accordion section:target h2 {
 }
 
 .modal-dialog {
-	min-width: 80%;
-}
-
-.modal-header {
-		margin: 0px 5% 0px;
-}
-
-.modal-body {
-	margin-left: 40%;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 12% !important;
+    height: 88%;
+    width: 60% !important;
+    overflow-y:auto;
+    overflow-x:auto;
+    outline: 3px !important;
 }
 
 .inline {
@@ -580,26 +435,48 @@ article.accordion section:target h2 {
 	max-width: 50%;
 }
 
+.gray {
+  opacity: .6;
+}
+
 .address {
     margin-left: 50px;
-}
-
-.styled-select select {
-	margin-left: -0.3em;
-	margin-top: -0.5em;
-	border: 1px solid black;
-	height: 3em;
-	padding-left: .8em;
-   -webkit-appearance: none;
+    opacity: .6;
 }
 
 
-.styled-select {
+
+.prog {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: red;
+  background-color: black;
+  z-index: 10;
+}
+
+.progress {
+  position: absolute;
+  height: 3em !important;
+  width: 100%;
+  z-index: 0;
+}
+
+/*.styled-select {
    width: 7em;
    height: 34px;
    overflow: hidden;
    border: 1px solid #ccc;
 }
+
+.styled-select select {
+  margin-left: -0.3em;
+  margin-top: -0.5em;
+  border: 1px solid black;
+  height: 3em;
+  padding-left: .8em;
+   -webkit-appearance: none;
+}*/
 
 .contact{
   margin-top: 7em;
@@ -612,3 +489,255 @@ article.accordion section:target h2 {
 .contact h3 {
   text-align: center;
 }
+
+
+input[type=radio] {
+  height: 1em;
+
+}
+
+
+
+
+
+
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #c0392b;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+.select-styled:hover {
+  background-color: #b83729;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #ab3326;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ab3326;
+}
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid #962d22;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  color: #c0392b;
+  background: #fff;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+.acc p {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.acc p:nth-child(2) {
+    position: absolute;
+    left:60%;
+}
+
+.acc p:last-child {
+  position: absolute;
+  right:6%;
+}
+
+.dash-sort table, td {
+  width: 15em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.dash-list {
+
+}
+
+.dash-list td {
+    position: relative;
+    width:200px;
+    height:40px;
+    margin-left:40px;
+    text-align:center;
+    line-height:40px;
+}
+
+.dash-list td:before {/*
+    content:"";
+    position: absolute;
+    right: 100%;
+    top:0px;
+    width:0px;
+    height:0px;
+    border-top:20px solid transparent;
+    border-right:40px solid black;
+    border-bottom:20px solid transparent;*/
+}
+
+.dash-list td:after {
+    content:"";
+    position: absolute;
+    left: 90%;
+    top:.5em;
+    width:0px;
+    height:0px;
+    border-top:20px solid transparent;
+    border-left:40px solid black;
+    border-bottom:20px solid transparent;
+}
+
+.dash-list:hover td {
+    background-color: black;
+}
+
+#scroll{
+    direction:rtl; 
+    overflow:auto; 
+    height:50px; 
+    width:50px;
+}
+
+#scroll div{
+    direction:ltr;
+}
+.scrollable-content {
+  margin-left: 2em;
+  margin-right: 1em;
+  height: 180px;
+  width: auto;
+  overflow: auto;
+}
+
+.scrollable-content #circle {
+  margin-top: 3em;
+}
+
+.dash-prog .wrapper {
+  display: inline-block;
+  margin-left: 20%;
+
+}
+
+.scrollable-content i:nth-child(2){
+  left:18% !important;
+}
+
+.scrollable-content i:nth-child(3){
+  left:34% !important;
+}
+
+.scrollable-content i:nth-child(4){
+  left:50% !important;
+}
+
+#circle {
+  position: absolute;
+  font-size: .6em;
+  top: 1%;
+  left: 2%;
+  z-index: 10;
+  width: 5em;
+  height: 5em;
+  background: white;
+  border: .25em solid black;
+  -moz-border-radius: 2.5em;
+  -webkit-border-radius: 2.5em;
+  border-radius: 2.5em; 
+}
+
+hr.fancy-line { 
+    border: 0; 
+    height: 1px;
+    position: relative;
+    margin: 2em; /* Keep other elements away from pseudo elements*/
+}
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.fancy-line:after {
+    content:'';
+    height: 0.3em;   /* half the height of :before */
+    top: 1px;        /* height of hr*/
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+}
+
+body, hr.fancy-line:after {
+    background: black;
+}
+
+#custom-accord {
+  border-color: white !important;
+}
+
+#custom-accord section{
+  height: 3em;
+}
+
+#custom-accord .panel-default {
+    border-color: white !important;
+}
+#custom-accord .panel-heading {
+    background-color: white !important;
+    border-color: white !important; 
+    background-image: none !important;
+}
+#custom-accord .panel-group .panel-heading+.panel-collapse .panel-body {
+    border-top: 0px white !important;
+}
+
+
+
